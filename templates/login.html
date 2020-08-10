@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="stylesheet" href={{ url_for('static', filename='css/main.css' ) }}> -->
+  <title>Login</title>
+</head>
+
+<body>
+  <div class="container">
+    <form action="/login" method="post">
+      <div class="row">
+        <div class="six columns">
+          <label for="name">Full Name</label>
+          <input class="u-full-width" type="text" placeholder="Enter Name" name="fullname">
+        </div>
+      </div>
+      <input class="button-primary" type="submit" value="Submit">
+    </form>
+
+
+  </div>
+</body>
+
+</html>
