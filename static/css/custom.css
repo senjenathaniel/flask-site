@@ -2,36 +2,14 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .button {
-  border-radius: 100px;
+  border-radius: 0px;
 }
 
 /* Sections
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-.section {
-  padding: 8rem 0 7rem;
-  text-align: center;
-}
-
 .section-heading, .section-description {
   margin-bottom: 1.2rem;
-}
-
-/* Hero
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-.phones {
-  position: relative;
-}
-
-.phone {
-  position: relative;
-  max-width: 80%;
-  margin: 3rem auto -12rem;
-}
-
-.phone+.phone {
-  display: none;
 }
 
 /* Values
@@ -85,7 +63,6 @@
   .hero {
     padding-bottom: 12rem;
     text-align: left;
-    height: 165px;
   }
   .phone {
     position: absolute;
@@ -103,7 +80,7 @@
     max-height: 338px;
   }
   .hero-heading {
-    font-size: 2.4rem;
+    font-size: 3rem;
   }
 }
 
@@ -115,9 +92,6 @@
   }
   .hero-heading {
     font-size: 2.6rem;
-  }
-  .section {
-    padding: 14rem 0 15rem;
   }
   .hero {
     padding: 16rem 0 14rem;
@@ -148,17 +122,10 @@
     padding: 20rem 0 19rem;
   }
   .hero {
-    padding: 22rem 0;
+    /* padding: 22rem 0; */
+    padding-top: 12rem;
   }
   .hero-heading {
-    font-size: 3.0rem;
-  }
-  .phone {
-    top: -16rem;
-    max-height: 615px;
-  }
-  .phone+.phone {
-    top: -14rem;
-    max-height: 570px;
+    font-size: 3.5rem;
   }
 }
