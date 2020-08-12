@@ -1,3 +1,4 @@
+custom
 /* Shared
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
@@ -12,36 +13,6 @@
   margin-bottom: 1.2rem;
 }
 
-/* Values
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-.values {
-  background-image: url('../images/values-bg.jpg');
-  background-size: cover;
-  /* color: #fff; */
-  padding-bottom: 5rem;
-}
-
-.value-multiplier {
-  margin-bottom: .5rem;
-  color: #11DFC7;
-}
-
-.value-heading {
-  margin-bottom: .3rem;
-}
-
-.value-description {
-  opacity: .8;
-  font-weight: 300;
-}
-
-/* Help
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-.get-help {
-  border-bottom: 1px solid #ddd;
-}
 
 /* Categories
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -63,21 +34,6 @@
   .hero {
     padding-bottom: 12rem;
     text-align: left;
-  }
-  .phone {
-    position: absolute;
-    top: -7rem;
-    right: 3rem;
-    max-height: 362px;
-    z-index: 3;
-  }
-  .phone+.phone {
-    top: -6rem;
-    display: block;
-    max-width: 73.8%;
-    right: 0;
-    z-index: 2;
-    max-height: 338px;
   }
   .hero-heading {
     font-size: 3rem;

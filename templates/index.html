@@ -22,8 +22,8 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="{{ url_for('static', filename = 'css/normalize.css')  }}">
   <link rel="stylesheet" href="{{ url_for('static', filename = 'css/skeleton.css')  }}">
-  <link rel="stylesheet" href="{{ url_for('static', filename = 'css/custom.css')  }}">
   <link rel="stylesheet" href="{{ url_for('static', filename = 'css/main.css')  }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename = 'css/custom.css')  }}">
   <style>
     body {
       line-height: 4rem;
@@ -82,6 +82,7 @@
     }
 
     .logo {
+      padding: 2rem;
       background-image: url("../static/img/logo/Logo\ -\ White.png");
       background-repeat: no-repeat;
       background-position: center;
@@ -100,6 +101,7 @@
       background-position: right;
       background-size: contain;
       position: relative;
+      background-attachment: fixed;
     }
 
     .about-button {
@@ -109,6 +111,10 @@
       color: #fff;
       padding: 0 3rem 0 3rem;
       font-size: 1.2rem;
+    }
+
+    a.button:visited {
+      color: #fff
     }
 
     .about-button:hover {
@@ -125,11 +131,101 @@
       background-repeat: no-repeat;
       background-position: left;
       background-size: contain;
+      background-attachment: fixed;
     }
 
     .skills {
       position: relative;
       float: right;
+    }
+
+    /* Work */
+    .work {
+      border-bottom: 1px solid #ddd;
+      background-image: url("../static/img/avatar/jump3.png");
+      background-repeat: no-repeat;
+      background-position: right;
+      background-size: contain;
+      background-attachment: fixed;
+    }
+
+    .activities {
+      min-height: 50vh;
+      text-align: center;
+      padding: 1rem 0 1rem 0;
+      background-color: #fafafa;
+    }
+
+    .activities:hover {
+      box-shadow: 0px 6px 8px rgba(34, 34, 34, 0.164);
+      padding: 0;
+    }
+
+    .icon {
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+      margin: 0;
+    }
+
+    .icon-description {
+      font-weight: bold;
+      margin: 0
+    }
+
+    .icon-text {
+      font-weight: normal;
+      margin-bottom: 0;
+    }
+
+    hr.divider {
+      margin-bottom: 0;
+      width: 65%;
+      text-align: center;
+      border-bottom: 2px solid #111;
+    }
+
+    .contact {
+      position: relative;
+      padding-top: 10rem;
+      padding-bottom: 5rem;
+      margin-bottom: 0;
+      background-image: url("../static/img/avatar/contact3.png");
+      background-repeat: no-repeat;
+      background-position: left;
+      background-size: contain;
+      background-attachment: fixed;
+      min-height: 80vh;
+    }
+
+    .contact-card {
+      border-left: 8px solid #111;
+      padding-left: 2rem;
+      margin-bottom: 4rem;
+    }
+
+    .contact-header {
+      padding-top: 1rem;
+      text-transform: uppercase;
+      font-weight: bold;
+      margin-bottom: 1.3rem;
+    }
+
+    .contact-details {
+      line-height: 1.5
+    }
+
+    .social-icon {
+      padding-right: 1.6rem;
+      height: 3rem;
+    }
+
+    a.social-link {
+      color: #111;
+      text-decoration: none;
+    }
+
+    a.social-link:hover {
+      color: rgb(27, 126, 219);
     }
   </style>
   <!-- Scripts
@@ -192,19 +288,15 @@
       <div class="row">
         <div class="one-third columns"></div>
         <div class="two-thirds columns" style="text-align: right;">
-          <div class="container">
-            <h2 style="border-bottom: 4px solid #111;"">About Me</h2>
+          <h2 style="border-bottom: 4px solid #111;"">About Me</h2>
           <p style=" padding-top:2rem;">Then he’d taken a long and pointless walk along the port’s security perimeter,
-              watching the gulls turn
-              circles beyond the chain link. After the postoperative check at the clinic, Molly took him to the Tank
-              War,
-              mouth touched with hot gold as a gliding cursor struck sparks from the wall of a skyscraper canyon.
-              </p>
-          </div>
+            watching the gulls turn
+            circles beyond the chain link. After the postoperative check at the clinic, Molly took him to the Tank
+            War,
+            mouth touched with hot gold as a gliding cursor struck sparks from the wall of a skyscraper canyon.
+            </p>
         </div>
-      </div>
 
-      <div class="row">
         <div class="container skills">
           <div class="four columns">
             <div class="ldBar" data-preset="stripe" data-value="80">
@@ -224,54 +316,161 @@
         </div>
       </div>
     </div>
+
   </div>
 
-  <div class="section get-help" style="padding-top: 22rrem;">
+  <div class="section work">
     <div class="container">
-      <h3 class="section-heading">Need help getting started?</h3>
-      <p class="section-description">Skeleton is an amazingly easy place to start with responsive development. If you
-        want to learn more, just visit the documentation!</p>
-      <a class="button button-primary" href="http://getskeleton.com">View Skeleton Docs</a>
-    </div>
-  </div>
-
-  <div class="section categories">
-    <div class="container">
-      <h3 class="section-heading">Responsive Images</h3>
-      <p class="section-description">Skeleton images sit easily in grid with .u-max-full-width class. I suggest
-        exploring solution to serving different images based on device size.</p>
       <div class="row">
-        <div class="one-half column category">
-          <img class="u-max-full-width" src="images/placeholder.png">
+        <div class="nine columns" style="text-align: left;">
+          <h2 style="border-bottom: 4px solid #111;">Stuff I do</h2>
+          <div class="row">
+            <!-- Pane 1 -->
+            <div class="four columns activities">
+              <div class="row">
+                <div class="twelve columns icon">
+                  <img src="../static/img/icons/code.png" alt="Twitter">
+                  <h5 class="icon-description"">Programming Languages</h5>
+                  <hr class=" divider">
+                </div>
+                <div class=" twelve columns icon-description">
+                  <p class="icon-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore
+                    et dolore magna aliqua.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Pane 2 -->
+            <div class="four columns activities">
+              <div class="row">
+                <div class="twelve columns icon">
+                  <img src="../static/img/icons/code.png" alt="Twitter">
+                  <h5 class="icon-description"">Web & Graphics Design</h5>
+                  <hr class=" divider">
+                </div>
+                <div class=" twelve columns icon-description">
+                  <p class="icon-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore
+                    et dolore magna aliqua.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Pane 3 -->
+            <div class="four columns activities">
+              <div class="row">
+                <div class="twelve columns icon">
+                  <img src="../static/img/icons/terminal.png" alt="Twitter">
+                  <h5 class="icon-description"">Artificial Intelligence</h5>
+                  <hr class=" divider">
+                </div>
+                <div class=" twelve columns icon-description">
+                  <p class="icon-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore
+                    et dolore magna aliqua.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
-        <div class="one-half column category">
-          <img class="u-max-full-width" src="images/placeholder.png">
+        <div class="five columns">
+        </div>
+      </div>
+      <div class="row">
+        <div class="u-full-width">
+          <a class="button about-button" href="#about">THERE'S MORE</a>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="section categories">
+
+  <div class="section contact" id="contact">
     <div class="container">
-      <h3 class="section-heading">Contact Me</h3>
-      <p class="section-description">Skeleton images sit easily in grid with .u-max-full-width class. I suggest
-        exploring solution to serving different images based on device size.</p>
       <div class="row">
-        <div class="one-half column category">
-          <img class="u-max-full-width" src="images/placeholder.png">
-        </div>
-        <div class="one-half column category">
-          <img class="u-max-full-width" src="images/placeholder.png">
+        <div class="one-third columns"></div>
+        <div class="two-thirds columns">
+          <h2 style="border-bottom: 4px solid #111; text-align: right">Contact Me</h2>
+          <div class="row" style="margin-top: 10rem;">
+            <div class="six columns">
+              <div class="row">
+                <div class="twelve columns contact-card">
+                  <h5 class="contact-header">Location</h5>
+                  <div class="contact-details">
+                    <p>Iala, Dar es Salaam <br>Tanzania</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Separator -->
+              <div class="row">
+                <div class="twelve columns contact-card">
+                  <h5 class="contact-header">Phone</h5>
+                  <div class="contact-details">
+                    <p>+255 (0) 683 219 868<br>+255 (0) 718 817 736</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Separator -->
+              <div class="row">
+                <div class="twelve columns contact-card">
+                  <h5 class="contact-header">Email</h5>
+                  <div class="contact-details">
+                    <p>nathanielsenje@hotmail.com</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Side 2 -->
+
+            <div class="six columns">
+              <div class="row">
+                <div class="twelve columns contact-card">
+                  <h5 class="contact-header">Social</h5>
+                  <div class="contact-details">
+                    <p>You can reach me in my social media pages, or view my Github repos... whatever you want! <br>Just
+                      HMU!</p>
+                  </div>
+                  <a href="https://github.com/senjenathaniel" class="social-link" target="_blank">
+                    <img class="social-icon" src="../static/img/icons/github.png"
+                      alt="">https://github.com/senjenathaniel</a>
+                  <br>
+                  <!--  -->
+                  <a href="https://twitter.com/SenjeNathaniel" class="social-link" target="_blank">
+                    <img class="social-icon" src="../static/img/icons/twitter.png"
+                      alt="">https://twitter.com/SenjeNathaniel</a>
+                  <br>
+                  <!--  -->
+                  <a href="https://www.linkedin.com/in/senjenathaniel/" class="social-link" target="_blank">
+                    <img class="social-icon" src="../static/img/icons/linkedin.png"
+                      alt="">https://linkedin.com/in/senjenathaniel/</a>
+
+                </div>
+              </div>
+              <!-- Separator -->
+              <div class="row">
+                <div class="twelve columns contact-card">
+                  <h5 class="contact-header">Blog</h5>
+                  <div class="contact-details">
+                    <p>nathanielsenje.com/blog
+                    <p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+
+
   </div>
-
-
-
-
-  <!-- End Document
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!-- End Document -->
 </body>
 
 </html>
