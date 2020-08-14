@@ -1,0 +1,206 @@
+body {
+  line-height: 4rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  height: 6.5rem;
+}
+
+.navbar {
+  display: block;
+  width: 100%;
+  background: #fff;
+  z-index: 99;
+}
+
+.navbar>.container {
+  width: 100%;
+}
+
+.no-list-style {
+  list-style: none;
+}
+
+.nav-items {
+  list-style: none;
+  margin-bottom: 0;
+  float: right;
+}
+
+.nav-item {
+  position: relative;
+  float: left;
+  margin-bottom: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-link {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: .2rem;
+  margin-right: 35px;
+  text-decoration: none;
+  line-height: 6.5rem;
+  color: #222;
+  padding: 0;
+}
+
+.nav-link:hover {
+  color: #222;
+  border-bottom: 4px solid #111;
+}
+
+.nav-link:active {
+  color: #999;
+  border-bottom: none;
+}
+
+.logo {
+  width: 24em;
+}
+
+.section {
+  height: 60vh;
+}
+
+.hero {
+  padding-top: 30rem;
+  padding-bottom: 0;
+  background-image: url("../img/avatar/face.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+  position: relative;
+  background-attachment: fixed;
+}
+
+.about-button {
+  margin-top: 3rem;
+  border-radius: .5rem;
+  background-color: #222;
+  color: #fff;
+  padding: 0 3rem 0 3rem;
+  font-size: 1.2rem;
+}
+
+a.button:visited {
+  color: #fff
+}
+
+.about-button:hover {
+  background-color: #444;
+  color: #fff;
+}
+
+.about {
+  position: relative;
+  padding-top: 20rem;
+  padding-bottom: 5rem;
+  margin-bottom: 0;
+  background-image: url("../img/avatar/coffee.png");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: contain;
+  background-attachment: fixed;
+}
+
+.skills {
+  position: relative;
+  float: right;
+}
+
+/* Work */
+
+.work {
+  border-bottom: 1px solid #ddd;
+  background-image: url("../img/avatar/jump3.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+  background-attachment: fixed;
+}
+
+.activities {
+  min-height: 50vh;
+  text-align: center;
+  padding: 1rem 0 1rem 0;
+  background-color: #fafafa;
+}
+
+.activities:hover {
+  box-shadow: 0px 6px 8px rgba(34, 34, 34, 0.164);
+  padding: 0;
+}
+
+.icon {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  margin: 0;
+}
+
+.icon-description {
+  font-weight: bold;
+  margin: 0
+}
+
+.icon-text {
+  font-weight: normal;
+  margin-bottom: 0;
+}
+
+hr.divider {
+  margin-bottom: 0;
+  width: 65%;
+  text-align: center;
+  border-bottom: 2px solid #111;
+}
+
+.contact {
+  position: relative;
+  padding-top: 10rem;
+  padding-bottom: 5rem;
+  margin-bottom: 0;
+  background-image: url("../img/avatar/contact3.png");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: contain;
+  background-attachment: fixed;
+  min-height: 80vh;
+}
+
+.contact-card {
+  border-left: 8px solid #111;
+  padding-left: 2rem;
+  margin-bottom: 4rem;
+}
+
+.contact-header {
+  padding-top: 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 1.3rem;
+}
+
+.contact-details {
+  line-height: 1.5
+}
+
+.social-icon {
+  padding-right: 1.6rem;
+  height: 3rem;
+}
+
+a.social-link {
+  color: #111;
+  text-decoration: none;
+}
+
+a.social-link:hover {
+  color: rgb(27, 126, 219);
+}
