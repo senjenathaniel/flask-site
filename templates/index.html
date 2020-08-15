@@ -36,7 +36,6 @@
       position: fixed;
       top: 0;
       height: 6.5rem;
-      box-shadow: 0px 3px 13px rgba(97, 97, 97, 0.164);
     }
 
     .navbar {
@@ -56,14 +55,19 @@
 
     .nav-items {
       list-style: none;
+    }
+
+    .menu-items {
       margin-bottom: 0;
       float: right;
+      width: 100%;
     }
 
     .nav-item {
       position: relative;
-      float: left;
+      min-height: 18px;
       margin-bottom: 0;
+      margin-top: 0;
       padding: 0;
       margin: 0;
     }
@@ -75,7 +79,6 @@
       letter-spacing: .2rem;
       margin-right: 35px;
       text-decoration: none;
-      line-height: 6.5rem;
       color: #222;
       padding: 0;
     }
@@ -90,7 +93,7 @@
     }
 
     .logo {
-      min-width: 4rem;
+      /* fill up with shit*/
     }
 
     .section {
@@ -160,7 +163,7 @@
     }
 
     .activities:hover {
-      box-shadow: 0px 6px 8px rgba(34, 34, 34, 0.164);
+      box-shadow: 0px 6px 8px rgb(214, 214, 214);
       padding: 0;
     }
 
@@ -248,22 +251,24 @@
 <body>
 
   <!-- Navbar -->
-  <nav class="navbar" id="home">
+  <nav class="navbar">
     <div class="container">
-      <ul class="no-list-style">
-        <li class="nav-item">
+      <div class="row">
+        <div class="two columns">
           <a class="" href="#home">
-            <img src="{{ url_for('static', filename='img/logo/logo.jpg') }}" alt="logo" class="logo">
+            <img src="{{ url_for('static', filename='img/logo/logo.png') }}" alt="Krystl Logo" class="nav-item logo">
           </a>
-        </li>
-      </ul>
-      <div class="navbar">
-        <ul class="nav-items">
-          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#work">Work</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-        </ul>
+        </div>
+        <div class="ten columns">
+          <div class="navbar">
+            <ul class="nav-items">
+              <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+              <li class="nav-item"><a class="nav-link" href="#work">Work</a></li>
+              <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   </nav>
@@ -271,7 +276,7 @@
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-  <div class="section hero">
+  <div class="section hero" id="home">
     <div class="container">
       <div class="row">
         <div class="six columns" style="text-align: left;">
@@ -334,7 +339,7 @@
             <div class="four columns activities">
               <div class="row">
                 <div class="twelve columns icon">
-                  <img src="../static/img/icons/code.png" alt="Twitter">
+                  <img src="../static/img/icons/code.png" alt="Code">
                   <h5 class="icon-description"">Programming Languages</h5>
                   <hr class=" divider">
                 </div>
@@ -351,7 +356,7 @@
             <div class="four columns activities">
               <div class="row">
                 <div class="twelve columns icon">
-                  <img src="../static/img/icons/code.png" alt="Twitter">
+                  <img src="../static/img/icons/pen-tool.png" alt="Pen">
                   <h5 class="icon-description"">Web & Graphics Design</h5>
                   <hr class=" divider">
                 </div>
@@ -368,7 +373,7 @@
             <div class="four columns activities">
               <div class="row">
                 <div class="twelve columns icon">
-                  <img src="../static/img/icons/terminal.png" alt="Twitter">
+                  <img src="../static/img/icons/terminal.png" alt="Terminal">
                   <h5 class="icon-description"">Artificial Intelligence</h5>
                   <hr class=" divider">
                 </div>
