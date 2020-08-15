@@ -92,10 +92,6 @@
       border-bottom: none;
     }
 
-    .logo {
-      /* fill up with shit*/
-    }
-
     .section {
       min-height: 70vh;
     }
@@ -232,6 +228,15 @@
     a.social-link:hover {
       color: rgb(27, 126, 219);
     }
+
+    a.dark-link {
+      color: #222;
+      text-decoration: none;
+    }
+
+    a.dark-link:hover {
+      color: rgb(27, 126, 219);
+    }
   </style>
 
   <!-- Scripts
@@ -254,12 +259,7 @@
   <nav class="navbar">
     <div class="container">
       <div class="row">
-        <div class="two columns">
-          <a class="" href="#home">
-            <img src="{{ url_for('static', filename='img/logo/logo.png') }}" alt="Krystl Logo" class="nav-item logo">
-          </a>
-        </div>
-        <div class="ten columns">
+        <div class="twelve columns">
           <div class="navbar">
             <ul class="nav-items">
               <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
@@ -430,7 +430,7 @@
                 <div class="twelve columns contact-card">
                   <h5 class="contact-header">Email</h5>
                   <div class="contact-details">
-                    <p>nathanielsenje@hotmail.com</p>
+                    <a class="dark-link" href="mailto:nathanielsenje@hotmail.com">nathanielsenje@hotmail.com</a>
                   </div>
                 </div>
               </div>
@@ -467,8 +467,8 @@
                 <div class="twelve columns contact-card">
                   <h5 class="contact-header">Blog</h5>
                   <div class="contact-details">
-                    <p>nathanielsenje.com/blog
-                    <p>
+                    <a class="dark-link" target="_blank"
+                      href="https://nate-flask-blog.herokuapp.com/">nathanielsenje.com/blog</a>
                   </div>
                 </div>
               </div>
